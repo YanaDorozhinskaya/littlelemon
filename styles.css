@@ -16,6 +16,7 @@ header > img {
     width: 60%;
 }
 
+
 main {
     margin-bottom: 15vh;
 }
@@ -48,15 +49,33 @@ main {
 }
 
 .promo-block h1 {
-    font-size: 130%;
+    font-size: 140%;
     margin-bottom: 2vh; 
 
 }
 
 .promo-block p {
-    font-size: 70%;
+    font-size: 100%;
     font-weight: 600;
     margin: 2vh 0 0 0;
+}
+
+.promo-block h1, .promo-block p {
+    opacity: 0;
+    transition: 1s;
+    animation: promo-block 6s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2ms;
+}
+
+@keyframes promo-block {
+    0% {
+        opacity:0;
+    }
+    
+    100% {
+        opacity:1;
+    }
 }
 
 .block {
@@ -130,7 +149,7 @@ div.block-info {
     display: block;
     text-align: center;
     align-self: center;
-    font-size: 100%;
+    font-size: 120%;
 }
 
 .block-info div p {
@@ -138,7 +157,7 @@ div.block-info {
     margin-right: 1vw;
     margin-left: 1vw;
     text-align: center;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 .block-info.border {
@@ -157,11 +176,11 @@ div.block-info {
 }
 
 .worktime li {
-    list-style: url(/project/pic/lemon.png);
+    list-style: url(/pic/lemon.png);
     text-align: left;
     list-style-position: inside;
     margin-left: 1vw;
-    font-size: 70%;
+    font-size: 100%;
 }
 
 .block-info a {
@@ -176,7 +195,7 @@ div.block-info {
     margin-left: 1vw;
     color: rgb(73, 94, 87);
     font-weight: 600;
-    font-size: 80%;
+    font-size: 100%;
 
 }
 
@@ -273,8 +292,403 @@ div.block-info {
     
     .footer-block.left img {
         margin-top: 5vh;
-        width: 90px;
+        width: 100%;
+    }
+
+    .footer-block h3{
+        font-size: 70%;
     }
 
 }
 
+@media screen and (min-width: 1100px) and (max-width: 1270px) {    
+    .worktime li {
+        text-align: center;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 500px) { 
+    
+    .block-item {
+        padding: 1vh 3vw;
+        margin-left: -2vw;
+    }
+
+    
+    .promo-block h1 {
+        font-size: 80%;
+    }
+    
+    .promo-block p {
+        font-size: 60%;
+    }
+    
+    main {
+        margin-bottom: 10vh;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }    
+    
+    .block-pic {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 5px;
+        align-self: center;
+        margin-top: 1vh;
+    
+    }
+    
+    div.block-info {
+        flex-direction: column;
+    }
+    
+    .block-info h2 {
+        font-size: 90%;
+    }
+    
+    .block-info div p {
+        font-size: 80%;
+    }
+    
+    .block-info.border {
+        border-right: 0px solid;
+        box-sizing: border-box;
+        border-left: 0px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .block-info a {
+        font-size: 90%;
+        margin-bottom: 2vh;
+    
+    }
+
+    .worktime li {
+        margin-left: 7vw;
+        font-size: 90%;
+    }
+  
+}
+
+@media screen and (max-height: 930px) and (max-width: 500px) { 
+    
+    #promo {
+        height: 25vh;
+    }
+
+    .block-item {
+        padding: 1vh 2vw;
+        margin-left: -2vw;
+    }
+
+    .block-item a {
+        font-size: 80%;
+    }
+    
+    .promo-block h1 {
+        font-size: 80%;
+    }
+    
+    .promo-block p {
+        font-size: 60%;
+    }
+    
+    main {
+        margin-bottom: 10vh;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }    
+    
+    .block-pic {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 5px;
+        align-self: center;
+        margin-top: 1vh;
+    
+    }
+    
+    div.block-info {
+        flex-direction: column;
+    }
+    
+    .block-info h2 {
+        font-size: 90%;
+    }
+    
+    .block-info div p {
+        font-size: 80%;
+    }
+    
+    .block-info.border {
+        border-right: 0px solid;
+        box-sizing: border-box;
+        border-left: 0px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .block-info a {
+        font-size: 90%;
+        margin-bottom: 2vh;
+    
+    }
+
+    .worktime li {
+        margin-left: 13vw;
+        font-size: 90%;
+    }
+  
+}
+
+@media screen and (max-height: 1200px) and (max-width: 830px) { 
+    
+    main {
+        margin-bottom: 10vh;
+    }
+
+    .block-item a {
+        font-size: 100%;
+    }
+    
+    .worktime li {
+        margin-left: -1vw;
+        font-size: 90%;
+    }
+
+    .block-info a {
+        padding: 1vh 4vw;
+    }
+}
+
+@media screen and (max-height: 1370px) and (max-width: 915px) { 
+
+    #promo {
+        height: 25vh;
+    }
+
+    .block-item a {
+        font-size: 100%;
+    }
+
+    .worktime li {
+        margin-left: 1vw;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-height: 730px) and (max-width: 550px) { 
+    
+    #promo {
+        height: 25vh;
+    }
+
+    .block-item {
+        padding: 1vh 2vw;
+        margin-left: -2vw;
+    }
+
+    .block-item a {
+        font-size: 80%;
+    }
+    
+    .promo-block h1 {
+        font-size: 70%;
+    }
+    
+    .promo-block p {
+        font-size: 20px;
+    }
+    
+    main {
+        margin-bottom: 10vh;
+    }
+
+    .info {
+        flex-direction: column;
+    }    
+    
+    .block-pic {
+        width: 50%;
+    }
+    
+    div.block-info {
+        flex-direction: column;
+    }
+    
+    .block-info h2 {
+        font-size: 90%;
+    }
+    
+    .block-info div p {
+        font-size: 80%;
+    }
+    
+    .block-info.border {
+        border-right: 0px solid;
+        box-sizing: border-box;
+        border-left: 0px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .block-info a {
+        font-size: 90%;
+        margin-bottom: 2vh;
+    
+    }
+
+    .worktime li {
+        margin-left: 11vw;
+        font-size: 80%;
+    }    
+}
+
+@media screen and (max-height: 660px) and (max-width: 290px) { 
+    
+    #promo {
+        height: 25vh;
+    }
+
+    .block-item {
+        padding: 1vh 2vw;
+        margin-left: -5w;
+    }
+
+    .block-item a {
+        font-size: 80%;
+    }
+    
+    .promo-block h1 {
+        font-size: 80%;
+        margin-bottom: -1vh;
+    }
+    
+    .promo-block p {
+        font-size: 60%;
+    }
+    .promo-block{
+        margin-right: 20vw;
+    }
+    
+    main {
+        margin-bottom: 10vh;
+    }
+
+    .info {
+        flex-direction: column;
+    }    
+    
+    .block-pic {
+        width: 50%;
+    }
+    
+    div.block-info {
+        flex-direction: column;
+    }
+    
+    .block-info h2 {
+        font-size: 90%;
+    }
+    
+    .block-info div p {
+        font-size: 80%;
+    }
+    
+    .block-info.border {
+        border-right: 0px solid;
+        box-sizing: border-box;
+        border-left: 0px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .block-info a {
+        font-size: 90%;
+        margin-bottom: 2vh;
+    
+    }
+
+    .worktime li {
+        margin-left: 1vw;
+        font-size: 80%;
+    }
+    
+    .footer-block h3{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        text-align: center;
+        font-size: 30%;
+    }    
+}
+
+@media screen and (max-height: 915px) and (max-width: 415px) { 
+
+    .block-item a {
+        font-size: 80%;
+    }
+
+    .worktime li {
+        margin-left: 14vw;
+        font-size: 80%;
+    }
+}    
+
+@media screen and (max-height: 600px) and (max-width: 1025px) { 
+
+    .promo-block h1 {
+        font-size: 100%;
+    }
+    
+    .promo-block p {
+        font-size: 80%;
+    }
+
+    .block-item a {
+        font-size: 100%;
+    }
+
+    .footer-block img {
+        height: 15vh;
+    }
+    
+    .footer-block h3{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-height: 670px) and (max-width: 380px) {
+
+    .promo-block{
+        margin-right: 20vw;
+    }
+
+    .promo-block h1 {
+        font-size: 80%;
+    }
+    
+    .promo-block p {
+        font-size: 70%;
+    }
+
+    .worktime li {
+        margin-left: 11vw;
+        font-size: 80%;
+    }
+}
